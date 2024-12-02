@@ -1,10 +1,6 @@
-import 'dart:io';
-
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:tutorial_1/core/services/songService.dart';
 import 'package:tutorial_1/models/song_model.dart';
-import 'package:tutorial_1/utils/api_utils.dart';
 import 'package:tutorial_1/widgets/song/song_list.dart';
 
 class HomeScreen extends StatefulWidget {

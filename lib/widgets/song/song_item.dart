@@ -10,7 +10,7 @@ class SongItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String imageUrl =
-        'https://images.pexels.com/photos/29410748/pexels-photo-29410748/free-photo-of-vintage-car-cruising-by-the-seaside-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+        'https://static.vecteezy.com/system/resources/previews/004/263/312/large_2x/girl-walking-on-isolated-moon-background-flat-illustration-free-vector.jpg';
 
     void detailPress() {
       if (onDetailPress != null) {
@@ -37,7 +37,7 @@ class SongItem extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.network(
-                  imageUrl,
+                  song.image ?? '',
                   width: 40,
                   height: 40,
                   fit: BoxFit.cover,
