@@ -9,9 +9,6 @@ class SongItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String imageUrl =
-        'https://static.vecteezy.com/system/resources/previews/004/263/312/large_2x/girl-walking-on-isolated-moon-background-flat-illustration-free-vector.jpg';
-
     void detailPress() {
       if (onDetailPress != null) {
         onDetailPress!(song.id ?? '');

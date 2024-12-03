@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tutorial_1/core/services/songService.dart';
 import 'package:tutorial_1/models/song_model.dart';
 import 'package:tutorial_1/widgets/song/song_list.dart';
+import 'package:tutorial_1/widgets/header_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   final String title;
@@ -47,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('List of songs'),
+        title: HeaderBar(title: widget.title),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),

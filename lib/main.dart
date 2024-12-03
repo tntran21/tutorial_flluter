@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tutorial_1/assets/styles/app_them.dart';
 import 'package:tutorial_1/screens/home_screen.dart';
 
 void main() {
@@ -13,11 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Spotify Clone',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const HomeScreen(title: 'Flutter Demo Home Page'),
+      theme: AppTheme.theme,
+      home: const HomeScreen(title: 'Home'),
     );
   }
 }
