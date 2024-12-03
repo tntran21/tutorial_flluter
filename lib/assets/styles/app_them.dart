@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 import 'app_colors.dart';
 import 'app_styles.dart';
 
@@ -16,11 +18,25 @@ class AppTheme {
         elevation: 0,
         titleTextStyle: AppStyles.heading2,
       ),
-      textTheme: const TextTheme(
-        headlineLarge: AppStyles.heading1,
-        headlineMedium: AppStyles.heading2,
-        bodyLarge: AppStyles.bodyText,
-        bodySmall: AppStyles.caption,
+      textTheme: TextTheme(
+        headlineLarge: GoogleFonts.redHatDisplay(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: AppColors.tertiary,
+        ),
+        headlineMedium: GoogleFonts.redHatDisplay(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: AppColors.tertiary,
+        ),
+        bodyLarge: GoogleFonts.redHatDisplay(
+          fontSize: 16,
+          color: AppColors.tertiary,
+        ),
+        bodyMedium: GoogleFonts.redHatDisplay(
+          fontSize: 14,
+          color: AppColors.tertiary,
+        ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: AppStyles.primaryButton,

@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Spotify Clone',
       theme: AppTheme.theme,
-      home: const HomeScreen(title: 'Home'),
+      routes: {
+        '/': (context) => const HomeScreen(title: 'Home'),
+      },
     );
   }
 }

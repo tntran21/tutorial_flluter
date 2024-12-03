@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeaderBar extends StatelessWidget {
   final String title;
@@ -17,7 +18,6 @@ class HeaderBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
       decoration: const BoxDecoration(
         color: Colors.white,
       ),
@@ -31,7 +31,7 @@ class HeaderBar extends StatelessWidget {
           ),
           const SizedBox(width: 5),
           Text(title,
-              style: const TextStyle(
+              style: GoogleFonts.pacifico(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               )),
